@@ -1,0 +1,74 @@
+'''age=int(input("How old are you? "))
+if age>=18:
+    print("You are an adult!")
+elif age==100:
+    print("You are a century old!")
+elif age<0:
+    print("You are not born yet!")
+else:
+    print("You are a child!")'''
+
+
+'''temp=int(input("What is the temp outside? "))
+if not(temp>=0 and temp<=30):
+   print("the temp is bad today,stay inside!")
+elif not(temp<0 or temp>30):
+  print("the temp is good today,go outside!")'''
+
+
+
+'''#while loop
+name= " "
+while len(name)==0:
+    name=input("Enter your name: ")
+print("Hello "+name)
+   '''
+
+
+'''for i in range(10,100,2):
+    print(i+1)
+    for i in "Raksha":
+        print(i)'''
+
+
+'''import time
+for seconds in range(10,0,-1):
+    print(seconds)
+    time.sleep(1)
+print("Happy new year!")'''
+
+
+'''rows = int(input("How many rows? "))
+columns = int(input("How many columns? "))
+symbol=input("Enter a symbol to use: ")
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()'''
+
+ #loop control statements
+ 
+'''while True:
+    name=input("enter your name:)
+    if name != "":
+      break
+ '''
+    
+'''phoneno="12345"
+
+for i in phoneno:
+    if i =="_":
+        continue
+    print(i,end="")
+
+for i in range(1,21):
+    if i==13:
+        pass
+    else:
+        print(i)'''
+
+
+
+
+
+
