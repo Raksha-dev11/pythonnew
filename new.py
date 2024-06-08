@@ -170,7 +170,7 @@ print(cards)
 '''
 
 #exception
-try:
+'''try:
     num=int(input("enter a num to divide: "))
     den=int(input("enter a num to divide by: "))
     result=num/den
@@ -184,8 +184,58 @@ except ValueError as e:
 except Exception as e:
     print(e)
     print("something went wrong")
-    
+'''
 
+
+
+'''import os
+path="C:\\Users\\raksh\\OneDrive\\Desktop\\text.txt"
+if os.path.exists(path):
+    print("That location exists")
+    if os.path.isfile(path):
+        print("This is a file")
+else:
+    print("That location doesnt exist!")
+'''
+
+
+'''with open('text.txt') as file:
+    print(file.read())
+
+'''
+
+#to write new text
+'''text="This is some text"
+with open('text.txt','w') as file:
+    file.write(text)
+'''
+
+#to append
+'''text ="have a nice day!"
+with open('text.txt','a')as file:
+    file.write(text)
+
+'''
+
+#copying files
+'''import shutil
+shutil.copyfile('text.txt','copy.txt') '''
+
+#move files
+'''import os
+source="text.txt "
+destination="C:\\Users\\raksh\\OneDrive\\Desktop\\text.txt"
+if os.path.exists(destination):
+    print("There is already a file there")
+else:
+    os.replace(source,destination)
+    print(source+" was moved")
+'''
+
+#delete files
+'''import os
+os.remove("C:\\Users\\raksh\\OneDrive\\Desktop\\text.txt")
+'''
 
 
 
