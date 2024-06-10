@@ -223,7 +223,7 @@ while food := input("what food do you like?: ") !="quit":
 '''
 
 #function to a variable
-def hello():
+'''def hello():
     print("Hello")
 print(hello)
 
@@ -231,15 +231,68 @@ print(hello)
 say=print
 say("it works")
 
+'''
+
+
+
+#lambda function
+
+#def double(x):
+#   return x*2
+#print(double(5))
+#this can be written as
+'''double = lambda x:x*2
+multiply=lambda x,y,z:x*y*z
+print (multiply(5,6,7))
+
+'''
+
+#sort method
+'''students = ("Ram","Varun","Rohan")
+#students.sort()#only can be used for lists
+sorted_students=sorted(students)
+for i in students:
+    print(i)
+
+students=[("Ram","F",60),
+          ("Varun","A",33),
+          ("Rohan","D",36)]
+grade=lambda grades:grades[1]
+students.sort(key=grade)
+for i in students:
+    print (i)
+'''
+
+#map() function
+'''store=[("shirt",20.00),
+       ("pants",25.00),
+       ("jacket",50.00),
+       ("socks",10.00)]
+to_euros=lambda data:(data[0],data[1]*0.82)
+store_euros=list(map(to_euros,store))
+for i in store_euros:
+    print(i)
+'''
+
+#filter function
+'''friends=[("Rachel",19),
+         ("Monica",18),
+         ("joey",16),
+         ("Ross",20)]
+age=lambda data:data[1]>=18
+vote=list(filter (age,friends))
+for i in vote:
+    print(i)
+'''
 
 
 
 
-
-
-
-
-
+#reduce function
+import functools
+letters=["H","E","L","L","O"]
+word = functools.reduce(lambda x,y:x+y,letters)
+print (word)
 
 
 
