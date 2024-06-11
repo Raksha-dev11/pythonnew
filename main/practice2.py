@@ -264,3 +264,133 @@ button=Button(window,
               text='submit',
               command=submit)
 window.mainloop()'''
+
+
+#listbox
+'''def submit():
+   food=[]
+   for index in listbox.curselection():
+      food.insert(index,listbox.get(IndexError))
+   print("You have ordered: ")
+   for index in food:
+      print(index)
+   #print(listbox.get(listbox.curselection()))
+
+def add():
+   listbox.insert(listbox.size(),entryBox.get())
+   listbox.config(height=listbox.size())   
+
+def delete():
+   for index in reversed(listbox.curselection()):
+      listbox.delete(index)
+   #listbox.delete(listbox.curselection())
+   listbox.config(height=listbox.size())
+
+from tkinter import *
+
+window=Tk()
+
+listbox=Listbox(window,
+                bg="#EFC3D2",
+                font=("Constantia",25),
+                width=10,
+                selectmode="multiple")
+listbox.pack()
+
+listbox.insert(1,"pizza")
+listbox.insert(2,"pasta")
+listbox.insert(3,"soup")
+listbox.insert(4,"salad")
+listbox.insert(5,"tacos")
+
+listbox.config(height=listbox.size())
+
+entryBox=Entry(window)
+entryBox.pack()
+
+submitButton=Button(window,text="submit",command=submit)
+submitButton.pack()
+
+addButton=Button(window,text="add",command=add)
+addButton.pack()
+
+deleteButton=Button(window,text="delete",command=delete)
+deleteButton.pack()
+
+window.mainloop()'''
+
+#messagebox
+'''from tkinter import*
+from tkinter import messagebox
+
+def click():
+  # if messagebox.askyesno(title='ask yes or no',message='Do you like cake'):
+   #   print('I like cake too: ')
+   #else:
+    #print('Why do you not like cake? ')
+    answer=messagebox.askyesnocancel(title='Yes no cancel',message='Do you like to code?')
+    if(answer==True):
+        print("You like to code")
+    elif(answer==False):
+        print("You dont like to code")
+    else:
+        print("You have dodged the question")
+    #print( messagebox.askquestion(title='ask question',message='Do you like pie?'))
+    #messagebox.showinfo(title='This is an info message box',message='you are a person')
+window=Tk()
+
+button = Button(window,command=click,text='click me')
+button.pack()
+
+window.mainloop()'''
+
+#colorimport module
+'''from tkinter import *
+from tkinter import colorchooser
+
+def click():
+    
+    window.config(bg=colorchooser.askcolor()[1])
+
+window=Tk()
+window.geometry("420x420")
+button=Button(text='click me',command=click)
+button.pack()
+window.mainloop()
+'''
+
+#textwidget
+'''from tkinter import*
+
+def submit():
+    input=text.get("1.0",END)
+    print(input)
+  
+window=Tk()
+text=Text(window,
+          bg='light yellow',
+          font=('Ink Free',20),
+          height=8,
+          width=20,
+          padx=20,
+          pady=20,
+          fg="purple")
+text.pack()
+button=Button(window,text="submit",command=submit)
+button.pack()
+window.mainloop()'''
+
+#File dialog
+'''from tkinter import*
+from tkinter import filedialog
+
+def openFile():
+    filepath=filedialog.askopenfilename()
+    file = open(filepath,'r')
+    print(file.read())
+    file.close
+window=Tk()
+button = Button(text="open",command=openFile)
+button.pack()
+window.mainloop()
+'''
